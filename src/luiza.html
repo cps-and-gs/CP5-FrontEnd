@@ -1,61 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <title>Document</title>
+    <title>CP5 -FrontEnd</title>
 </head>
+<header>
+  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/src/index.html">CP5 - Front-End</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/src/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/gabi.html">Sobre Gabrielly</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/joao.html">Sobre João</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/src/luiza.html">Sobre Luiza</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 <body>
-    <main> 
+    <main>
+      <div class="cards">
         <div class="card mb-3">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Breaking Bad</h5>
-                  <p class="card-text">Breaking Bad é uma série de drama criminal criada por Vince Gilligan, lançada em 2008. A história acompanha Walter White, um professor de química que, após ser diagnosticado com câncer, decide fabricar metanfetamina para sustentar sua família, ao lado de seu ex-aluno Jesse Pinkman. A série ficou famosa pela narrativa intensa e personagens profundos.
-                    Algumas curiosidades: a famosa cena da pizza no telhado foi feita em uma única tentativa; Jesse Pinkman seria morto na primeira temporada, mas a atuação de Aaron Paul mudou os planos; a produção consultou a DEA para garantir realismo nas cenas; e o turismo em Albuquerque cresceu tanto que virou ponto de visita dos fãs.</p>
-    
-                </div>
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/src/imgs/page-pk.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Peaky Blinders</h5>
+                <p class="card-text">Peaky Blinders é uma aclamada série de drama histórico britânica criada por Steven Knight, ambientada em Birmingham, na Inglaterra, logo após o fim da Primeira Guerra Mundial. A trama gira em torno da família Shelby, liderada pelo ambicioso e implacável Thomas Shelby, um ex-soldado que retorna do front determinado a expandir os negócios da gangue familiar — os Peaky Blinders — um grupo de criminosos notórios por costurarem lâminas de barbear em seus chapéus.</p>
+                <p class="card-text">Ao longo da série, acompanhamos Tommy em sua ascensão no submundo do crime, enfrentando rivais perigosos, conflitos com o governo britânico, tensões familiares e os fantasmas de seu passado. A série mergulha em temas como poder, ambição, lealdade, trauma de guerra, política e corrupção. Com uma estética sombria e estilizada, trilha sonora moderna e atuações marcantes — especialmente de Cillian Murphy no papel principal — Peaky Blinders conquistou uma legião de fãs ao redor do mundo e se consolidou como uma das produções mais influentes da televisão contemporânea.</p>
               </div>
             </div>
           </div>
-
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Como descobriu a série/filme?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Descobri através do catálogo da Netflix. Sempre gostei bastante de filmes e séries de terror, mas ainda não tinha começado a assistir. Recentemente, comecei e realmente a série é tudo o que falam! Muito boa mesmo!</div>
-              </div>
+        </div>
+      </div> 
+      <div class="div-accordion">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Como descobriu a série/filme?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">No início da pandemia resolvi assinar um plano da Netflix e comecei a pesquisar várias séries famosas. Acabei encontrando "Peaky Blinders" e me interessei bastante pois gosto muito de suspense, investigação, máfia, etc.. Me apaixonei, é muito boa!</div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    O que nos conquistou?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  O que nos conquistou?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Primeiramente, é preciso comentar sobre os atores, todos são muito bons e eu me senti naquela época. Além disso, toda a trama te envolve de uma maneira inexplicável. Estou ansiosa pelo filme que irá ser lançado!</div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Curiosidades a respeito
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Curiosidades a respeito
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">A gangue Peaky Blinders realmente existiu em Birmingham no final do século XIX e início do século XX. Eles usavam lâminas de barbear costuradas nos bonés, exatamente como na série. Além disso, para entrar no papel, Cillian Murphy aprendeu a fumar (usava cigarros de ervas), treinou o sotaque de Birmingham e até estudou comportamento de veteranos de guerra.</div>
             </div>
+          </div>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
